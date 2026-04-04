@@ -1,0 +1,213 @@
+{
+  "project": "Happy Coder - Mobile and Web Client for Claude Code & Codex",
+  "version": "1.0.0",
+  "features": [
+    {
+      "id": "cli-001",
+      "category": "CLI",
+      "description": "happy claude 命令 - 启动 Claude Code 包装器",
+      "steps": ["运行 happy claude", "验证 CLI 启动", "验证与服务器连接"],
+      "priority": "high",
+      "status": "pending",
+      "tested": false
+    },
+    {
+      "id": "cli-002",
+      "category": "CLI",
+      "description": "happy codex 命令 - 启动 Codex 包装器",
+      "steps": ["运行 happy codex", "验证 CLI 启动", "验证与服务器连接"],
+      "priority": "high",
+      "status": "pending",
+      "tested": false
+    },
+    {
+      "id": "cli-003",
+      "category": "CLI",
+      "description": "守护进程管理 - daemon start/stop/status",
+      "steps": ["运行 happy daemon start", "验证守护进程启动", "运行 happy daemon status", "运行 happy daemon stop"],
+      "priority": "high",
+      "status": "pending",
+      "tested": false
+    },
+    {
+      "id": "cli-004",
+      "category": "CLI",
+      "description": "身份验证流程 - QR码扫描绑定",
+      "steps": ["运行 happy auth", "生成 QR 码", "使用手机 App 扫描", "验证绑定成功"],
+      "priority": "high",
+      "status": "pending",
+      "tested": false
+    },
+    {
+      "id": "cli-005",
+      "category": "CLI",
+      "description": "端到端加密 - 密钥生成与交换",
+      "steps": ["验证密钥生成", "验证加密通信", "验证解密功能"],
+      "priority": "high",
+      "status": "pending",
+      "tested": false
+    },
+    {
+      "id": "server-001",
+      "category": "Server",
+      "description": "独立模式启动 - PGlite 嵌入式数据库",
+      "steps": ["运行 yarn standalone:dev", "验证服务器启动", "访问健康检查端点"],
+      "priority": "high",
+      "status": "pending",
+      "tested": false
+    },
+    {
+      "id": "server-002",
+      "category": "Server",
+      "description": "API 路由 - 身份验证端点",
+      "steps": ["POST /v1/auth/request", "POST /v1/auth/response", "验证令牌生成"],
+      "priority": "high",
+      "status": "pending",
+      "tested": false
+    },
+    {
+      "id": "server-003",
+      "category": "Server",
+      "description": "API 路由 - 会话管理",
+      "steps": ["POST /v1/sessions - 创建会话", "GET /v1/sessions - 获取会话列表", "DELETE /v1/sessions/:id - 删除会话"],
+      "priority": "high",
+      "status": "pending",
+      "tested": false
+    },
+    {
+      "id": "server-004",
+      "category": "Server",
+      "description": "WebSocket 实时通信 - Socket.io",
+      "steps": ["建立 WebSocket 连接", "验证实时消息推送", "验证断线重连"],
+      "priority": "high",
+      "status": "pending",
+      "tested": false
+    },
+    {
+      "id": "server-005",
+      "category": "Server",
+      "description": "数据库迁移 - Prisma 迁移系统",
+      "steps": ["运行 yarn migrate", "验证迁移成功", "检查数据库结构"],
+      "priority": "medium",
+      "status": "pending",
+      "tested": false
+    },
+    {
+      "id": "app-001",
+      "category": "App",
+      "description": "React Native 应用启动 - iOS",
+      "steps": ["运行 yarn ios", "应用成功启动", "验证基础 UI 渲染"],
+      "priority": "high",
+      "status": "pending",
+      "tested": false
+    },
+    {
+      "id": "app-002",
+      "category": "App",
+      "description": "React Native 应用启动 - Android",
+      "steps": ["运行 yarn android", "应用成功启动", "验证基础 UI 渲染"],
+      "priority": "high",
+      "status": "pending",
+      "tested": false
+    },
+    {
+      "id": "app-003",
+      "category": "App",
+      "description": "Web 应用启动",
+      "steps": ["运行 yarn web", "应用成功启动", "验证浏览器访问"],
+      "priority": "high",
+      "status": "pending",
+      "tested": false
+    },
+    {
+      "id": "app-004",
+      "category": "App",
+      "description": "QR 码扫描 - 设备绑定",
+      "steps": ["打开扫描界面", "扫描 CLI 生成的 QR 码", "验证绑定成功"],
+      "priority": "high",
+      "status": "pending",
+      "tested": false
+    },
+    {
+      "id": "app-005",
+      "category": "App",
+      "description": "会话列表显示",
+      "steps": ["显示活跃会话", "显示历史会话", "点击会话进入详情"],
+      "priority": "high",
+      "status": "pending",
+      "tested": false
+    },
+    {
+      "id": "app-006",
+      "category": "App",
+      "description": "实时消息显示 - 代码输出",
+      "steps": ["查看代码生成", "查看文件修改", "查看执行结果"],
+      "priority": "high",
+      "status": "pending",
+      "tested": false
+    },
+    {
+      "id": "app-007",
+      "category": "App",
+      "description": "推送通知 - 权限请求",
+      "steps": ["请求通知权限", "接收推送通知", "点击通知进入应用"],
+      "priority": "medium",
+      "status": "pending",
+      "tested": false
+    },
+    {
+      "id": "app-008",
+      "category": "App",
+      "description": "国际化支持 - 多语言切换",
+      "steps": ["切换语言", "验证界面翻译", "验证文本更新"],
+      "priority": "medium",
+      "status": "pending",
+      "tested": false
+    },
+    {
+      "id": "sync-001",
+      "category": "Sync",
+      "description": "同步协议 - 加密数据传输",
+      "steps": ["验证数据加密", "验证数据解密", "验证数据完整性"],
+      "priority": "high",
+      "status": "pending",
+      "tested": false
+    },
+    {
+      "id": "sync-002",
+      "category": "Sync",
+      "description": "同步引擎 - 状态管理",
+      "steps": ["验证状态同步", "验证冲突解决", "验证离线支持"],
+      "priority": "high",
+      "status": "pending",
+      "tested": false
+    },
+    {
+      "id": "mcp-001",
+      "category": "MCP",
+      "description": "MCP 服务器 - 权限拦截",
+      "steps": ["启动 MCP 服务器", "拦截权限请求", "发送到移动应用"],
+      "priority": "medium",
+      "status": "pending",
+      "tested": false
+    },
+    {
+      "id": "build-001",
+      "category": "Build",
+      "description": "CLI 构建 - pkgroll 打包",
+      "steps": ["运行 yarn build", "验证 dist 输出", "测试二进制文件"],
+      "priority": "high",
+      "status": "pending",
+      "tested": false
+    },
+    {
+      "id": "build-002",
+      "category": "Build",
+      "description": "TypeScript 类型检查",
+      "steps": ["运行 yarn typecheck", "无类型错误", "解决所有类型问题"],
+      "priority": "high",
+      "status": "pending",
+      "tested": false
+    }
+  ]
+}
