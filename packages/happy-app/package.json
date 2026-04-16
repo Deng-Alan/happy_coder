@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "scripts": {
     "android": "expo run:android",
+    "web": "expo start --web",
     "test": "vitest",
     "release": "node ./release.cjs",
     "release:build:developer": "eas build --profile development --platform android --no-wait --non-interactive && eas build --profile preview --platform android --no-wait --non-interactive",
@@ -25,6 +26,14 @@
   },
   "jest": {
     "preset": "jest-expo"
+  },
+  "expo": {
+    "autolinking": {
+      "exclude": [
+        "expo-dev-client",
+        "expo-dev-launcher"
+      ]
+    }
   },
   "dependencies": {
     "@config-plugins/react-native-webrtc": "^12.0.0",
