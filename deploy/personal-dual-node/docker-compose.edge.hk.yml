@@ -1,0 +1,16 @@
+services:
+  caddy:
+    image: caddy:2.10-alpine
+    container_name: happy-edge-hk
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./Caddyfile.hk:/etc/caddy/Caddyfile:ro
+      - happy-caddy-hk-data:/data
+      - happy-caddy-hk-config:/config
+
+volumes:
+  happy-caddy-hk-data:
+  happy-caddy-hk-config:

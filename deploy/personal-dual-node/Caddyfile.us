@@ -1,0 +1,18 @@
+{
+    email admin@acdji.asia
+}
+
+us-api.acdji.asia, api.acdji.asia {
+    encode zstd gzip
+    reverse_proxy happy-server:3005
+}
+
+files.acdji.asia {
+    encode zstd gzip
+    reverse_proxy minio:9000
+}
+
+minio-console.acdji.asia {
+    encode zstd gzip
+    reverse_proxy minio:9001
+}
