@@ -26,7 +26,7 @@ permissions:
 
 env:
   REGISTRY: ghcr.io
-  IMAGE_NAME: ${{ github.repository }}-server
+  IMAGE_NAME: deng-alan/happy_coder-server
 
 jobs:
   build:
