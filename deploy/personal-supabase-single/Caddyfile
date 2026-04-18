@@ -1,0 +1,8 @@
+{
+    email admin@acdji.asia
+}
+
+api.acdji.asia {
+    encode zstd gzip
+    reverse_proxy happy-server:3005
+}
